@@ -45,6 +45,7 @@
             this.btnShowMsg.TabIndex = 0;
             this.btnShowMsg.Text = "Display Message";
             this.btnShowMsg.UseVisualStyleBackColor = true;
+            this.btnShowMsg.Click += new System.EventHandler(this.btnShowMsg_Click);
             // 
             // btnReverse
             // 
@@ -104,6 +105,7 @@
             this.Controls.Add(this.btnShowMsg);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
