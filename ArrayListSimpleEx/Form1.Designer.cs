@@ -33,7 +33,7 @@
             this.lblMessage = new System.Windows.Forms.Label();
             this.txtSecondPos = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRmoveSecondPos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnShowMsg
@@ -56,6 +56,7 @@
             this.btnReverse.TabIndex = 1;
             this.btnReverse.Text = "Display Message In Reverse";
             this.btnReverse.UseVisualStyleBackColor = true;
+            this.btnReverse.Click += new System.EventHandler(this.btnReverse_Click);
             // 
             // lblMessage
             // 
@@ -81,23 +82,25 @@
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Add to Second Position";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button1
+            // btnRmoveSecondPos
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(29, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(193, 23);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Remove from Second Position";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRmoveSecondPos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRmoveSecondPos.Location = new System.Drawing.Point(29, 206);
+            this.btnRmoveSecondPos.Name = "btnRmoveSecondPos";
+            this.btnRmoveSecondPos.Size = new System.Drawing.Size(193, 23);
+            this.btnRmoveSecondPos.TabIndex = 5;
+            this.btnRmoveSecondPos.Text = "Remove from Second Position";
+            this.btnRmoveSecondPos.UseVisualStyleBackColor = true;
+            this.btnRmoveSecondPos.Click += new System.EventHandler(this.btnRmoveSecondPos_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(447, 255);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRmoveSecondPos);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtSecondPos);
             this.Controls.Add(this.lblMessage);
@@ -118,7 +121,7 @@
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.TextBox txtSecondPos;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRmoveSecondPos;
     }
 }
 
